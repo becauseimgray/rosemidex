@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+
+body {
+  animation: fade-in-move-down 0.7s;
+background-color:FFFFFF;
+margin: 0 auto
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@keyframes fade-in-move-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[value="tim" i] ~ #result:before {
+ content: "Tim Carry";
+}
+
+h1,
+p,
+a{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+}
+a:active {
+    color: none;
+}
+
+h1 {
+  z-index:9999;
+  font-size: 2.8em;
+  padding: 10px 0;
+  font-weight: 800;
+}
+
+p {
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 100;
+  letter-spacing: 5px;
+  z-index:1;
+}
+
+.header {
+  width: 100%;
+  padding:60px 0;
+  text-align: center;
+  background: #FFB6C1;
+  color: white;
+  /*text-shadow: 1px 1px 2px #FF0000;*/
+-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.btn-bgstroke {
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 40px; 
+}
+
+.btn-bgstroke:hover {
+  background-color: white;
+  color: #FFB6C1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation{
+position:absolute;
+width:100%;
+}
+
+#navbar {
+margin-top:10px;
+float:left;
+overflow: hidden;
+width: 14%;
+background-color: #FFB6C1;
+
+}
+/* Navbar links */
+#navbar a {
+  float: left;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.content {
+position:absolute; 	
+  padding: 16px;
+left:0;
+  right: 0;
+  top: 0;
+margin-top:500px;
+}
+
+#info, #name {
+z-index:-1;
+position:relative;
+font-family: 'Lato';
+font-size: 25px;
+}
+
+#info {
+font-size:50%;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 14%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.rosemi_1 {
+    position: relative;
+    top: -400px;
+    right: -880px;
+    filter: brightness(0) invert(100%);
+}
+
+
+
+/* SEARCH */
+
+input {
+  color: pink;
+  width: 250px;
+  text-align: left;
+  outline: none;
+  border: 0;
+  padding: 10px 40px;
+  caret-color:pink;
+ font-family: 'Lato';
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+input:focus {
+   width: 250px;
+   outline: none;
+   border: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+
+
+
