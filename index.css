@@ -88,16 +88,15 @@ html {
 }
 
 .navigation{
-position:absolute;
-width:100%;
+width:42px;
 z-index: 2;
+position:absolute;
 }
 
 #navbar {
 border-radius:15px;
 margin-top:10px;
-float:left;
-width: 14%;
+width: 42px;
 background-color: #FFB6C1;
 }
 /* Navbar links */
@@ -108,6 +107,7 @@ background-color: #FFB6C1;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  width:42px;
 }
 
 #navbar a:hover {
