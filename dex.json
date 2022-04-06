@@ -12,5 +12,12 @@
     "species": "Toe",
     "gender": "Female",
     "image": "media/tosemi.png"
+  },
+  {
+    "name": "Holmesemi Sherlock",
+    "alternate_names": [],
+    "species": "Detective",
+    "gender": "Female",
+    "image": "media/holmesemi.png"
   }
 ]
