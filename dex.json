@@ -1,5 +1,16 @@
-{
-  "id": "1",
-  "name": "Rosemi",
-  "desc": "test"
-}
+[
+  {
+    "name": "Rosemi Lovelock",
+    "alternate_names": [],
+    "species": "Rose",
+    "gender": "Female",
+    "image": "media/rosemi_lovelock.webp"
+  },
+  {
+    "name": "Tosemi Footlocker",
+    "alternate_names": [],
+    "species": "Toe",
+    "gender": "Female",
+    "image": "media/tosemi.png"
+  }
+]

@@ -1,14 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+@import url(https://fonts.googleapis.com/css?family=Sora:400,300,100,700,900);
 
 body {
   animation: fade-in-move-down 0.7s;
-background-color:FFFFFF;
-margin: 0 auto
+  background-color:white;
+  margin: 0 auto;
+  z-index: 1;
+  max-width: 100%;
 }
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 @keyframes fade-in-move-down {
@@ -20,10 +22,6 @@ html, body {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-input[value="tim" i] ~ #result:before {
- content: "Tim Carry";
 }
 
 h1,
@@ -49,25 +47,26 @@ p {
   font-size: 1.1em;
   font-weight: 100;
   letter-spacing: 5px;
-  z-index:1;
 }
 
 .header {
+  position:relative;
   width: 100%;
   padding:60px 0;
   text-align: center;
-  background: #FFB6C1;
   color: white;
-  /*text-shadow: 1px 1px 2px #FF0000;*/
+  background-color:#FFB6C1;
+  max-height:200px;
+      /* overflow-x: hidden; */
+           /*MAKES IT SO YOU CAN'T SELECT TEXT CUZ ITS UGLY*/
 -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+-webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                              supported by Chrome, Edge, Opera and Firefox */
 }
-
 
 .btn-bgstroke {
   font-size: 20px;
@@ -81,8 +80,7 @@ p {
 }
 
 .btn-bgstroke:hover {
-  background-color: white;
-  color: #FFB6C1;
+  background-color:#FFB6C1;
 }
 
 html {
@@ -92,15 +90,15 @@ html {
 .navigation{
 position:absolute;
 width:100%;
+z-index: 2;
 }
 
 #navbar {
+border-radius:15px;
 margin-top:10px;
 float:left;
-overflow: hidden;
 width: 14%;
 background-color: #FFB6C1;
-
 }
 /* Navbar links */
 #navbar a {
@@ -112,28 +110,20 @@ background-color: #FFB6C1;
   text-decoration: none;
 }
 
+#navbar a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: transform 200ms ease-in-out;
+}
+
 .content {
 position:absolute; 	
   padding: 16px;
-left:0;
+  left:0;
   right: 0;
   top: 0;
 margin-top:500px;
 }
-
-#info, #name {
-z-index:-1;
-position:relative;
-font-family: 'Lato';
-font-size: 25px;
-}
-
-#info {
-font-size:50%;
-}
-
-
-
 .sticky {
   position: fixed;
   top: 0;
@@ -145,18 +135,11 @@ font-size:50%;
 }
 
 
-.rosemi_1 {
-    position: relative;
-    top: -400px;
-    right: -880px;
-    filter: brightness(0) invert(100%);
-}
-
-
 
 /* SEARCH */
 
 input {
+  top:-500px;
   color: pink;
   width: 250px;
   text-align: left;
@@ -164,7 +147,8 @@ input {
   border: 0;
   padding: 10px 40px;
   caret-color:pink;
- font-family: 'Lato';
+  font-family: 'Lato';
+  position:relative;
 }
 
 /* clears the ‘X’ from Internet Explorer */
@@ -187,14 +171,58 @@ input:focus {
    border: 0;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
+.header_img{
+  position:relative;
+  left:500px;
+  top:-334px;
+  overflow: hidden;
+  /* filter: brightness(0) invert(1); */
+  object-fit: cover;
+  object-position: 0px 100px;
+  pointer-events: none
 }
 
+.character {
+    animation: fade-in-move-down 0.7s;
+    margin: 20px;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style-type: none;
+    cursor: pointer;
 
+    
+}
+
+.character > img {
+  min-height: 140px;
+  min-width: 140px;
+  grid-area: image;
+}
+
+.character > p{
+  position: absolute;
+  padding-top:114px;
+  padding-left:10px;
+  font-size:14px;
+  font-weight:140px;
+  letter-spacing: normal;
+  text-align:center;
+  font-family:'Sora';
+  color:white;
+  border:pink;
+  background-clip:content-box;
+  background-color:rgba(0, 0, 0, .5);
+}
+li{
+  top:-80px;
+}
+
+li:hover{
+  filter: brightness(80%);
+}
 
 

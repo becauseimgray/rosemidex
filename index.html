@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 <html>
 
 <link rel="stylesheet" type="text/css" href="index.css"/>
 <script src="https://kit.fontawesome.com/ba7ed5657e.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script><h2></h2>
-<script type="text/javascript" src="dex.json"></script>
-<script src="index.js"></script>
+<script type="application/json" src="dex.json"></script>
+
 
   <head>
     <title>Rosemidex</title>
@@ -25,24 +24,18 @@
 </div>
 </div>
 <section class="header">
-    <h1>RosemiDex</h1>
+    <h1>RosemiDex </h1>
     <p>The Definitive Collection of Rosemis</p>
+    <img class="header_img" src="media/rosemi_1.png"></img>
 <br>
 <br>
 <br>
-</script>
-<input id="searchbar" onkeyup="search_semi()" autocomplete="off" type="text" placeholder=""/>
+<input id="searchbar" autocomplete="off" type="text" placeholder=""/></input>
 </section>
-<div class="rosemi_1">    
-<img src="media/rosemi_1.png"></img>
-</div>
 <body>
 <div class="content">
-<ul id="results">
-<!--<div id="name"></div>-->
-<!--<div id="info"></div>-->
-</ul>
-
+  <ul id="dexList"></ul>
+  <script src="index.js"></script>
 </div>  
 </body>
 </html>
