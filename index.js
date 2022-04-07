@@ -19,8 +19,9 @@ let rCharacters = [];
 
 //triggers when key released, calls search bar
 searchBar.addEventListener('keyup', (e) => {
+
   const searchString = (e.target.value.toLowerCase());
-  //filters for name
+  //filters for specific tags
   const filteredCharacters = rCharacters.filter((character) => {
     return (
         character.name.toLowerCase().includes(searchString)

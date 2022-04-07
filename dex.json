@@ -3,21 +3,28 @@
     "name": "Rosemi Lovelock",
     "alternate_names": [],
     "species": "Rose",
-    "gender": "Female",
+    "firstseen": "Debut",
     "image": "media/rosemi_lovelock.webp"
   },
   {
     "name": "Tosemi Footlocker",
     "alternate_names": [],
     "species": "Toe",
-    "gender": "Female",
+    "firstseen": "Fan Discord Server",
     "image": "media/tosemi.png"
   },
   {
     "name": "Holmesemi Sherlock",
     "alternate_names": [],
     "species": "Detective",
-    "gender": "Female",
+    "firstseen": "TTT Collab Stream",
     "image": "media/holmesemi.png"
+  },
+  {
+    "name": "Brightsemi",
+    "alternate_names": [],
+    "species": "Lamp",
+    "firstseen": "Walking Dead Stream at 1:50:31",
+    "image": "media/brightsemi.png"
   }
 ]
